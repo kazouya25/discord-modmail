@@ -38,7 +38,7 @@ async function initmodmail(rolename,token,guildid,prefix,welcomemsg) {
                     var getpush = getii.push(message.author.id);
                    await db.dbset("cases",getpush)
                    var csget = db.dbget('cases')
-                   console.log(csget)
+                   console.log("Get: " + csget)
                    var cspos = csget.indexOf(message.author.id);
                    console.log(cspos)
                    var caseID = csget[cspos]

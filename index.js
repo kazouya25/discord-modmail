@@ -40,9 +40,9 @@ async function initmodmail(rolename,token,guildid,prefix,welcomemsg) {
                    await db.dbset("cases",getpush)
                    var csget = db.dbget('cases')
                    console.log("Get: " + csget)
-                   var find = csget.indexOf(message.author.id);
-                    var caseID = csget[find]
-                   var name = "case-" + caseID
+                   var caseID = csget.indexOf(message.author.id);
+                    var userID = csget[caseID]
+                   var name = "case-" + fin
               var server = client.guilds.get(guildid)
               var embed = new Discord.RichEmbed()
                     .setColor(0x00FF00)

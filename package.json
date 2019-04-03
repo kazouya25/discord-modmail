@@ -1,0 +1,24 @@
+{
+  "name": "discord-modmail",
+  "version": "0.0.21",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "basic.db": "^0.2.7",
+    "discord.js": "^11.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sasial-roblox/discord-modmail.git"
+  },
+  "author": "Sasial-Roblox (https://github.com/sasial-roblox)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sasial-roblox/discord-modmail/issues"
+  },
+  "homepage": "https://github.com/sasial-roblox/discord-modmail#readme"
+}

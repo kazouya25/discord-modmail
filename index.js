@@ -35,7 +35,7 @@ async function initmodmail(rolename,token,guildid,prefix,welcomemsg) {
                 if (!inc) { 
                     var getii = db.dbget('cases')
                     console.log(getii)
-                    var getpush = getii.push(message.author.id);
+                    var getpush = getii.concat([message.author.id]);
                     console.log(getpush)
                    await db.dbset("cases",getpush)
                    var csget = db.dbget('cases')

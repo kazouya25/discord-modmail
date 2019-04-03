@@ -54,7 +54,7 @@ async function initmodmail(rolename,token,guildid,prefix,welcomemsg) {
                     .addField(args, "Send by: " + message.author.username + " with the  Case ID: " + caseID)
           server.createChannel(name, "text", [
             {
-                id: client.guilds.get(guildid).roles.find(role => role.name === rolename),
+                id: server.roles.find(role => role.name === rolename).id,
                 allow: ['VIEW_CHANNEL'],
             },
               {
@@ -72,7 +72,7 @@ async function initmodmail(rolename,token,guildid,prefix,welcomemsg) {
                     .setTitle("New message from DM!")
                     .addField(args, "Send by: " + message.author.username + " with the  Case ID: " + incpos)
                     client.guilds.get(guildid).channels.find(c => c.name === name).send(embed)
-                            message.react('535031768533696532')//send the embed in a specific channel
+                            message.react('562889533398450206')//send the embed in a specific channel
                 }
             }
             // Netx
